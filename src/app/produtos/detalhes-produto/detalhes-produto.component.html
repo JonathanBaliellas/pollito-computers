@@ -1,15 +1,15 @@
 <section class="w3-container">
     <div id="img" class="w3-half w3-center">
-        <img src="https://via.placeholder.com/300" alt="" srcset="">
+        <img [src]="produto?.imagem" alt="" srcset="">
     </div>
     <div id="compra" class="w3-half w3-border w3-round w3-padding">
-        <h2>Nome do Produto</h2>
-        <h3>R$ 0,00</h3>
+        <h2>{{produto?.descricao}}</h2>
+        <h3>{{produto?.preco | currency:"BRL"}}</h3>
         <label for="quant">
             Quantidade:
-            <input type="number" id="quant" min="1" max="999" value="1" class="w3-border w3-round-large w3-center">
+            <input type="number" id="quant" min="1" max="999" value="1" class="w3-border w3-round-large w3-center" [(ngModel)]="quant">
         </label>
-        <p class="disponibilidade espacamento">n unidade(s) em estoque</p>
+        <p class="disponibilidade espacamento">{{produto?.quantEstoque}} unidade(s) em estoque</p>
         <button class="w3-button w3-indigo w3-round-large">Adicionar ao carrinho</button>
     </div>
 
