@@ -10,7 +10,7 @@
             <input type="number" id="quant" min="1" max="999" value="1" class="w3-border w3-round-large w3-center" [(ngModel)]="quant">
         </label>
         <p class="disponibilidade espacamento">{{produto?.quantEstoque}} unidade(s) em estoque</p>
-        <button class="w3-button w3-indigo w3-round-large">Adicionar ao carrinho</button>
+        <button class="w3-button w3-indigo w3-round-large" (click)="adicionarCarrinho()">Adicionar ao carrinho</button>
     </div>
 
     <!-- Descrição do produto -->
