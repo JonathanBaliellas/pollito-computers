@@ -5,7 +5,7 @@
     <div class="w3-half w3-right">
         <nav class="w3-bar">
             <a class="w3-button w3-bar-item" routerLink="produtos">Produtos</a>
-            <a class="w3-button w3-bar-item" href="">Carrinho</a>
+            <a class="w3-button w3-bar-item" href="">Carrinho <i class="fa-solid fa-cart-shopping"></i><span class="quant-carrinho">{{carrinhoService.obterCarrinho().length}}</span></a>
             <a class="w3-button w3-bar-item" href="">Contato</a>
             <a class="w3-button w3-bar-item" href=""><i class="fa-brands fa-square-facebook"></i></a>
             <a class="w3-button w3-bar-item" href=""><i class="fa-brands fa-instagram"></i></a>
