@@ -6,3 +6,12 @@
     border-radius: 50%;
     font-weight: bold;
 }
+.logo{
+    padding-top: 20px;
+    font-size: 3rem!important;
+}
+@media only screen and (max-width: 880px){
+    .logo{
+        font-size: 2rem!important;
+    }
+}
