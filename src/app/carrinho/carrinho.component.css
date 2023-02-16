@@ -1,9 +1,7 @@
 .button-remove{
     height: 100%;
 }
-.w3-button{
-    transition: .2s all;
-}
+
 .w3-card{
     border-radius: 10px;
 }
@@ -40,4 +38,10 @@ input {
     text-align: center;
     border: none;
     border-bottom: 1px solid gray;
+}
+.icoVazio{
+    font-size: 6rem;
+}
+.btnVerMais{
+    width: 250px;
 }

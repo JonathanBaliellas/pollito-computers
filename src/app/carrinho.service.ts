@@ -10,13 +10,22 @@ export class CarrinhoService {
   constructor() { }
 
   obterCarrinho(){
-    return JSON.parse(localStorage.getItem("carrinho") || "");
+    this.itens = JSON.parse(localStorage.getItem("carrinho") || "[]");
+    return this.itens;
   }
   adicionarCarrinho(produto: IProdutoCarrinho){
     this.itens.push(produto);
+    this.atualizarCarrinho();
+  }
+  removerCarrinho(produtoId: number){
+    this.itens = this.itens.filter(item => item.id !== produtoId);
+    this.atualizarCarrinho();
+  }
+  atualizarCarrinho(){
     localStorage.setItem("carrinho", JSON.stringify(this.itens));
   }
-  removerCarrinho(produto: IProdutoCarrinho){
-    this.itens.splice(this.itens.indexOf(produto),1);
+  limparCarrinho(){
+    this.itens = [];
+    localStorage.clear();
   }
 }
