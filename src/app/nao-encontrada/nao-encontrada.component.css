@@ -1,14 +1,14 @@
 h2{
-    font-size: 16rem;
+    font-size: 16rem!important;
     margin-top: 200px;
 }
 h3{
-    font-size: 8rem;
+    font-size: 8rem!important;
     font-weight: bold;
     margin-top: 180px;
 }
 p{
-    font-size: 2rem;
+    font-size: 2rem!important;
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 150px;

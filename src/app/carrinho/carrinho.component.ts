@@ -45,4 +45,9 @@ export class CarrinhoComponent {
     this.carrinhoService.limparCarrinho();
     this.router.navigate(['produtos']);
   }
+
+  limparCarrinho(){
+    this.carrinhoService.limparCarrinho();
+    this.consultarCarrinho();
+  }
 }

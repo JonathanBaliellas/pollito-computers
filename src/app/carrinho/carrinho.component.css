@@ -5,7 +5,11 @@
 .w3-card{
     border-radius: 10px;
 }
-/* Curso */
+
+.btn-comandos{
+    width: 150px;
+}
+
 .cart-title {
     font-size: 44px;
     font-weight: 700;
